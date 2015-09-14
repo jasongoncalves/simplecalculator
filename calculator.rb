@@ -11,7 +11,8 @@ while num1 == nil do
 end
 
 puts "What is the second number?"
-num2 = gets.chomp
+num2 = Integer(gets.chomp) rescue nil
+
 while num2 == nil do
   puts "Oops! You have entered a non-numeric value, Try Again"
   num2 = Integer(gets.chomp) rescue nil
